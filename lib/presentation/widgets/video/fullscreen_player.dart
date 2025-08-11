@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tok_tik_app/presentation/widgets/video/gradient.background.dart';
 import 'package:video_player/video_player.dart';
 class FullscreenPlayer extends StatefulWidget {
   final String videoUrl;
@@ -58,7 +59,9 @@ class _FullscreenPlayerState extends State<FullscreenPlayer> {
           children: [
             VideoPlayer(controller),
             // gradiente
-            
+            GradientBackgound(
+              stops: [0.8,1.0],
+            ),
             
             // texto
             Positioned(
